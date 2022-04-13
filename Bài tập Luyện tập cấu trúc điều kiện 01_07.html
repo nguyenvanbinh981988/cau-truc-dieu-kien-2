@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Minute = parseFloat(prompt("Enter Minute"))
+    let Cuoc_dien_thoai = 25000
+    if (Minute <= 50) {
+        Cuoc_dien_thoai += Minute*600
+    } else if (Minute <= 200) {
+        Cuoc_dien_thoai += 50*600 + (Minute-50)*400
+    } else {
+        Cuoc_dien_thoai += 50*600 + 150*400 +(Minute-200)*200
+    }
+    alert( "Cuoc dien thoai:" + Cuoc_dien_thoai + 'VND')
+</script>
+</body>
+</html>

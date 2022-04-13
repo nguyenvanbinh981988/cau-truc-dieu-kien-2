@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+      let kiemTra = parseFloat(prompt("Enter kiemTra"))
+      let giuaKy = parseFloat(prompt("Enter giuaKy"))
+      let cuoiKy = parseFloat(prompt("Enter cuoiKy"))
+      trungBinh = (kiemTra + giuaKy + cuoiKy) / 3
+      if (trungBinh >= 9) {
+          alert("Hoc sinh xuat xac")
+      } else if (trungBinh >= 8){
+          alert('Hoc sinh gioi')
+      } else if (trungBinh >= 7) {
+          alert('Hoc sinh kha')
+      } else if (trungBinh >= 6.5){
+          alert('Hoc sinh trung binh kha')
+      } else if (trungBinh >= 5) {
+          alert('Hoc sinh trung binh')
+      } else {
+          alert('Hoc sinh yeu')
+      }
+  </script>
+</body>
+</html>

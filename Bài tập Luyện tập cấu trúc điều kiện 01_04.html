@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("enter a"))
+    let b = parseInt(prompt("enter b"))
+    let c = parseInt(prompt("enter c"))
+    if (a > b && a > c){
+        alert( ' so lon nhat la ' + a)
+    } else if ( a < b && a< c ) {
+        if (b>=c) {
+            alert( ' so lon nhat la ' + b)
+        } else {
+            alert( ' so lon nhat la ' + c)
+        }
+    } else if( a == b && a==c){
+        alert( ' so lon nhat la ' + a)
+    } else if(a==b || a==c) {
+        if (b > c) {
+            alert( ' so lon nhat la ' + b)
+        } else {
+            alert( ' so lon nhat la ' + c)
+        }
+    } else if( a > b && a < c) {
+        alert( ' so lon nhat la ' + c)
+    } else {
+        alert( ' so lon nhat la ' + b)
+    }
+
+
+</script>
+</body>
+</html>
