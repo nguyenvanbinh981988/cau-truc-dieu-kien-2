@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button{
+            margin-left: 50px;
+            margin-top: 5px;
+        }
+        h1{
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<h1>Do you love me</h1>
+<button type="button" style="width: 80px" onclick="dongy()">Yes</button>
+<button id="Vi" type="button" style="width: 80px" onmouseover="khong()">No</button>
+<script>
+    function dongy() {
+        alert("<3")
+    }
+    function init(){
+        document.getElementById("Vi").style.position="relative"
+        document.getElementById("Vi").style.left= "0px"
+        document.getElementById("Vi").style.top= "0px"
+    }
+    function khong(){
+        document.getElementById("Vi").style.left= Math.random()*500 + "px"
+        document.getElementById("Vi").style.top= Math.random()*500 + "px"
+    }
+    window.onload=init;
+</script>
+
+</body>
+</html>
