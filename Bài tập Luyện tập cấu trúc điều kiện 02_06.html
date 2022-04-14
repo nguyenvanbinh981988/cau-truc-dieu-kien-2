@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('enter a'))
+    let b = parseFloat(prompt('enter b'))
+    let x
+    // ax + b = 0
+    if (a==0 && b==0){
+        alert('Phuong trinh vo so nghiem')
+    } else if (a == 0 && b != 0) {
+        alert('Phuong trinh vo nghiem')
+    } else {
+        x = (-b) / a
+        alert('Nghiem cua phuong trinh la: ' + x)
+    }
+</script>
+</body>
+</html>

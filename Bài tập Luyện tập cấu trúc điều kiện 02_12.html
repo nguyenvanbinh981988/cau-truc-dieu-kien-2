@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Sum= parseInt(prompt("Nhap tien vay",))
+    let Sothang= parseInt(prompt("Nhap so thang",))
+    const laisuat = 0.07;
+    let lai
+    for (let i=0; i<Sothang;i++){
+        lai = laisuat*Sum
+        Sum += lai
+    }
+    alert(Sum)
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ThuNhap = parseFloat(prompt("Enter Thu nhap"))
+    let Thue
+    if (ThuNhap > 0) {
+        if (ThuNhap <= 4000000) {
+            Thue = 0
+        } else if (ThuNhap <= 6000000) {
+            Thue = (ThuNhap - 4000000) * (5/100)
+        } else if (ThuNhap <= 10000000) {
+            Thue = 2000000*5/100 + (ThuNhap - 6000000) * 10/100
+        } else if (ThuNhap <= 20000000) {
+            Thue = 2000000*5/100 + (4000000) * 10/100 + (ThuNhap - 10000000) * 15/100
+        } else if (ThuNhap <= 40000000) {
+            Thue = 2000000*5/100 + (4000000) * 10/100 + (10000000) * 15/100 + (ThuNhap - 20000000) * 20/100
+        } else {
+            Thue = 2000000*5/100 + (4000000) * 10/100 + (10000000) * 15/100 + (20000000) * 30/100
+
+        }
+    }
+    alert( "Tien dien:" + Thue + 'VND')
+</script>
+</body>
+</html>

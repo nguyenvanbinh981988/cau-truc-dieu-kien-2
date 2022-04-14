@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('enter a'))
+    let b = parseFloat(prompt('enter b'))
+    let c = parseFloat(prompt('enter c'))
+    let X1
+    let X2
+    // ax^2 +bx +c = 0
+    let Delta = b*b - 4 * a * c
+    if ( Delta < 0) {
+        alert('phuong trinh khong co nghiem')
+    } else if ( Delta == 0) {
+        X1 = (-b)/ (2 * a)
+        alert('phuong trinh co 1 nghiem x = ' + X1)
+    } else {
+        X1 = ((-b) + Math.sqrt(Delta)) / (2*a)
+        X2 = ((-b) - Math.sqrt(Delta)) / (2*a)
+        alert( 'Phuong trinh co 2 nghiem la: X1= ' + X1 + ' ; X2= ' + X2)
+    }
+
+</script>
+</body>
+</html>
